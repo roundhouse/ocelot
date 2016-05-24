@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link  rel="StyleSheet" href="css/main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js -->
+    <script type="text/javascript" src="js/app.js"></script> 
+  </head>
+  <body id="body">
+    <div id="controls">
+      
+      <div id="input_controls" >
+        <div class="wave_data" id="alpha">Alpha: <span id="alpha_value"></span></div>
+        <div class="wave_data"  id="beta">Beta: <span id="beta_value"></span></div>
+        <div class="wave_data"  id="phi">Phi: <span id="phi_value"></span></div>
+        <div class="wave_data"  id="length">Length: <span id="length_value"></span></div>
+        <div class="wave_data"  id="hight">Height: <span id="height_value"></span></div>
+        <div class="wave_data"  id="hight">Stroke Weight: <span id="stroke_value"></span></div>
+        <div class="wave_data"  id="hight">Color Speed: <span id="color_value"></span></div>
+
+        <div class="wave_data"  id="equation">Equation: </div>
+        <div class="wave_data"><span id="equation_value"></span></div>
+
+
+
+      </div>
+
+<!--       <div id="mouse_controls">
+        <div id="mouse_toggle">off / on</div>
+        <div id="mouse_type">position / movement</div>
+      </div> -->
+
+    </div>
+
+    <svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   xml:space="preserve">
+<!--     <filter id="f1" x="0" y="0">
+      <feGaussianBlur id="blur" in="SourceGraphic" stdDeviation="10" />
+    </filter>
+    <filter id="star_filter">
+        <feTurbulence baseFrequency=".04" result="ripples" />
+        <feComposite operator="in" in="ripples" in2="SourceGraphic"/>
+    </filter> -->
+<!--     <filter id="extremeEffect">
+      <feConvolveMatrix order="5" kernelMatrix="1 1 1 1 1 1 -2 -2 -2 1 1  -2 .01 -2 1 1 -2 -2 -2 1 1 1 1 1 1"/>
+      <feColorMatrix type="luminanceToAlpha"/>
+    </filter> -->
+      <path id="curve" stroke-width="2" stroke="black" stroke-linecap="square" fill="none" /> 
+    </svg>
+    <div id="mobile_force"></div>
+    <div id="instruct">Spacebar to Pause &nbsp; | &nbsp; Up & Down Arrows to change Alpha &nbsp; | &nbsp; Left & Right Arrows to change Beta &nbsp; | &nbsp; hold shift to use your mouse position  &nbsp; | &nbsp; hold mouse down to use the mouse movement  &nbsp; | &nbsp; Use [ and ] keys to change the stroke weight &nbsp; | &nbsp; Use o and p keys to change the color speed</div> 
+  </body>
+</html>
